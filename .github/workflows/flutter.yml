@@ -24,7 +24,7 @@ jobs:
 
       - name: Build APK
         run: flutter build apk --release
-        working-directory: .   # ✅ add this line
+        working-directory: app   # ✅ add this line
 
       - name: Upload APK
         uses: actions/upload-artifact@4
