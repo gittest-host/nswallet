@@ -24,10 +24,10 @@ jobs:
 
       - name: Build APK
         run: flutter build apk --release
-        working-directory: src/nswallet   # ✅ add this line
+        working-directory: .   # ✅ add this line
 
       - name: Upload APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@4
         with:
           name: NSWallet-APK
           path: src/nswallet/build/app/outputs/flutter-apk/app-release.apk  # ✅ updated path
