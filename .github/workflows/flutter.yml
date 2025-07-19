@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
-        working-directory: src/nswallet   # ✅ add this line
+        working-directory: ./src/nswallet   # ✅ add this line
 
       - name: Build APK
         run: flutter build apk --release
