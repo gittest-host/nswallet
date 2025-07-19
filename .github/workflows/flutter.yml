@@ -27,7 +27,7 @@ jobs:
         working-directory: app   # ✅ add this line
 
       - name: Upload APK
-        uses: actions/upload-artifact@4
+        uses: actions/upload-artifact@4.3.1
         with:
           name: NSWallet-APK
           path: src/nswallet/build/app/outputs/flutter-apk/app-release.apk  # ✅ updated path
